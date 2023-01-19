@@ -9,25 +9,25 @@ Creating DataFrames:
 pd.DataFrame(data, columns) - creates a DataFrame from data (e.g. list of lists or dict) and specifies column names
 pd.read_csv(file) - creates a DataFrame from a CSV file
 
-#Viewing Data:
+# Viewing Data:
 df.head() - displays the first 5 rows of the DataFrame
 df.tail() - displays the last 5 rows of the DataFrame
 df.info() - displays information about the DataFrame, including column names and data types
 df.describe() - displays summary statistics for numerical columns
 
-#Selecting Data:
+# Selecting Data:
 df[col] - returns the column with the given name as a Series
 df[[col1, col2]] - returns a new DataFrame with the specified columns
 df.loc[row] - returns the row at the given index
 df.iloc[row] - returns the row at the given position
 
-#Filtering Data:
+# Filtering Data:
 df[condition] - returns a new DataFrame with rows that meet the given condition
 df[condition].any() - returns a boolean indicating whether any row in the DataFrame meets the given condition
 
-#Grouping and Aggregating:
+# Grouping and Aggregating:
 df.groupby(col) - groups the DataFrame by the given column
 df.groupby(col).mean() - calculates the mean of each group
 df.groupby(col).sum() - calculates the sum of each group
 df.groupby(col).count() - calculates the count of each group
-#Please note that this is not an exhaustive list and you should consult the Pandas documentation for more information.
+# Please note that this is not an exhaustive list and you should consult the Pandas documentation for more information.
